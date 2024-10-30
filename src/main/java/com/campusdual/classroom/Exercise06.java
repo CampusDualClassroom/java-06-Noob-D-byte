@@ -5,21 +5,25 @@ import java.util.Calendar;
 public class Exercise06 {
 
     public static void main(String[] args) {
+
+
+        // Creamos una instancia del calendario
+        Calendar now = Calendar.getInstance();
+        int month = now.get(Calendar.MONTH) + 1;
+        int hour = now.get(Calendar.HOUR_OF_DAY);
+
+        checkHour(hour);
         checkHour(6);
         checkHour(7);
         checkHour(14);
         checkHour(21);
 
 
-        checkSeason(3);
+        checkSeason(month);
+        checkSeason(1);
         checkSeason(6);
         checkSeason(9);
         checkSeason(12);
-
-        // Creamos una instancia del calendario
-        Calendar now = Calendar.getInstance();
-        int month = now.get(Calendar.MONTH) + 1;
-        int hour = now.get(Calendar.HOUR_OF_DAY);
     }
 
 
